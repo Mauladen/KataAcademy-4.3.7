@@ -79,6 +79,7 @@ body {
 }
 
 .starred-card {
+    position: relative;
     width: 100%;
     outline: none;
     border: none;
@@ -89,4 +90,19 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+
+.card__button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background: none;
+    background-image: url("/image/delete.svg");
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+.card__button:hover {
+    cursor: pointer;
 }
