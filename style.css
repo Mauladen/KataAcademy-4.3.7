@@ -15,7 +15,7 @@ body {
 }
 
 
-.wrapper .search-input{
+.wrapper .search {
     background: #fff;
     width: 100%;
     border-radius: 5px;
@@ -23,7 +23,7 @@ body {
     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
 
-.search-input input{
+.search__input {
     height: 55px;
     width: 100%;
     outline: none;
@@ -34,11 +34,11 @@ body {
     box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
 
-.search-input.active input{
+.search.active .search__input {
     border-radius: 5px 5px 0 0;
 }
 
-.search-input .autocom-box{
+.search .search__autocomplete {
     padding: 0;
     opacity: 0;
     pointer-events: none;
@@ -46,13 +46,13 @@ body {
     overflow-y: auto;
 }
 
-.search-input.active .autocom-box{
+.search.active .search__autocomplete {
     padding: 10px 8px;
     opacity: 1;
     pointer-events: auto;
 }
 
-.autocom-box li{
+.search__autocomplete li{
     list-style: none;
     padding: 8px 12px;
     display: none;
@@ -61,24 +61,23 @@ body {
     border-radius: 3px;
 }
 
-.search-input.active .autocom-box li{
+.search.active .search__autocomplete li{
     display: block;
 }
 
-.autocom-box li:hover{
+.search__autocomplete li:hover{
     background: #efefef;
 }
 
 .wrapper .starred {
-    background: #644bff;
     width: 100%;
     border-radius: 5px;
     position: relative;
-    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
     margin-top: 50px;
 }
 
 .starred-card {
+    background: #644bff;
     position: relative;
     width: 100%;
     outline: none;
@@ -86,10 +85,11 @@ body {
     border-radius: 5px;
     padding: 10px 60px 10px 20px;
     font-size: 18px;
-    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .card__button {
